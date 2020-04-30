@@ -28,7 +28,8 @@ public class Cloud extends platform
 		forcedOut(a);
     }//外星人降落
     public void forcedOut(Alien a){
-        if(alienHere.length()=1 && a.identify(alienHere[0])=false && alienHere[0].getSave=false)//当云上只有一个外星人且外星人势力不同且该外星人可遣返
+        if(alienHere.length()=1 && 
+        a.identify(alienHere[0])=false && alienHere[0].getSave=false)//当云上只有一个外星人且外星人势力不同且该外星人可遣返
 		alienHere[0].goback();
     }//遣返，需要函数boolean Alien.identify(Alien a) 判断外星人是否势力相同
     public void leaveAlien(Alien a){
