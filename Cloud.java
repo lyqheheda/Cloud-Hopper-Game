@@ -21,16 +21,16 @@ public class Cloud extends platform
                 
             }*///根据编号确定功能
     }
-    public void loadAliean(Alien a){
-		addAliean(a);
+    public void loadAlien(Alien a){
+		addAlien(a);
 		a.setaAtionStatus(1);
 		event(a);
 		forcedOut(a);
     }//外星人降落
     public void forcedOut(Alien a){
         if(alienHere.length()=1 && a.identify(alienHere[0])=false && alienHere[0].getSave=false)//当云上只有一个外星人且外星人势力不同且该外星人可遣返
-		alieanHere[0].goback();
-    }//遣返，需要函数boolean Aliean.identify(Aliean a) 判断外星人是否势力相同
+		alienHere[0].goback();
+    }//遣返，需要函数boolean Alien.identify(Alien a) 判断外星人是否势力相同
     public void leaveAlien(Alien a){
 	removeAlien(a);
 	a.setSave(false);
@@ -56,7 +56,7 @@ public class Cloud extends platform
     private void meetRainCloud(Alien a){
         /*switch (getindex()){
                 case 0:
-               a.moveTo(Cloud1);//需要函数void Aliean.moveTo(Cloud c) 外星人获取目标云的坐标，移动到对应坐标
+               a.moveTo(Cloud1);//需要函数void Alien.moveTo(Cloud c) 外星人获取目标云的坐标，移动到对应坐标
                 break;
                 case 1:
                  a.moveTo(Cloud2);
@@ -77,8 +77,8 @@ public class Cloud extends platform
         a.setmoveable(false);//需要变量moveable表示外星人是否能移动
     }//黑云
     private void meetLightingCloud(Alien a){
-        a.goback();//需要函数void Aliean.goback()使外星人回到飞船
-        leaveAliean(a);
+        a.goback();//需要函数void Alien.goback()使外星人回到飞船
+        leaveAlien(a);
     }//雷云
     private void meetSprongiZone(Alien a){
         a.setSave(true);
